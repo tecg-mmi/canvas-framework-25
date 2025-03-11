@@ -1,0 +1,14 @@
+{
+  "name": "canvas-framework-25",
+  "version": "1.0.0",
+  "description": "A lightweight scholar framework designed to simplify simple game development by providing tools for drawing in the canvas element.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel <daniel.schreurs@hepl.be>",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^6.2.1"
+  }
+}
