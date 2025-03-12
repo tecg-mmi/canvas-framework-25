@@ -1,15 +1,15 @@
 import {iPosition} from "../iPosition";
 import {Shape} from "./Shape";
 import {Rgba} from "../colors/Rgba";
+import {Hsl} from "../colors/Hsl";
 
 export class Rectangle extends Shape {
-
     width: number;
     height: number;
     rotation: number;
 
 
-    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: Rgba, width: number, height: number, rotation: number) {
+    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: Rgba | Hsl, width: number, height: number, rotation: number) {
         super(ctx, position, color);
         this.width = width;
         this.height = height;
