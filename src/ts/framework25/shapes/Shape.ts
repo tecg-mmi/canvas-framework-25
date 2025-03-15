@@ -1,5 +1,5 @@
-import {iColor} from "../../types/iColor";
-import {iPosition} from "../../types/iPosition";
+import {iPosition} from "../types/iPosition";
+import {iColor} from "../types/iColor";
 
 export abstract class Shape {
     ctx: CanvasRenderingContext2D;

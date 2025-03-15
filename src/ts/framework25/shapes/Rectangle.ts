@@ -1,6 +1,6 @@
 import {Shape} from "./Shape";
-import {iColor} from "../../types/iColor";
-import {iPosition} from "../../types/iPosition";
+import {iPosition} from "../types/iPosition";
+import {iColor} from "../types/iColor";
 
 export class Rectangle extends Shape {
     width: number;

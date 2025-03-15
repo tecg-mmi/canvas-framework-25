@@ -1,5 +1,5 @@
 import {settings} from "../settings";
-import {iColor} from "../../types/iColor";
+import {iColor} from "../types/iColor";
 
 export class Hsl implements iColor {
     private _hue: number;

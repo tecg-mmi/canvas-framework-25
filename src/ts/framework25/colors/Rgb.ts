@@ -1,5 +1,5 @@
 import {settings} from "../settings";
-import {iColor} from "../../types/iColor";
+import {iColor} from "../types/iColor";
 
 export class Rgb implements iColor {
     private _red: number;

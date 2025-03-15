@@ -1,6 +1,6 @@
 import {Shape} from "./Shape";
-import {iPosition} from "../../types/iPosition";
-import {iColor} from "../../types/iColor";
+import {iPosition} from "../types/iPosition";
+import {iColor} from "../types/iColor";
 
 export class Circle extends Shape {
     radius: number;

@@ -1,5 +1,5 @@
 import {Rgb} from "./Rgb";
-import {iColor} from "../../types/iColor";
+import {iColor} from "../types/iColor";
 
 export class Rgba extends Rgb implements iColor {
     private _alpha: number;
