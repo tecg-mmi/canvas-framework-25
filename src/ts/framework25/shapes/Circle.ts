@@ -1,12 +1,11 @@
 import {Shape} from "./Shape";
-import {iPosition} from "../iPosition";
-import {Rgba} from "../colors/Rgba";
-import {Hsl} from "../colors/Hsl";
+import {iPosition} from "../../types/iPosition";
+import {iColor} from "../../types/iColor";
 
 export class Circle extends Shape {
     radius: number;
 
-    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: Rgba | Hsl, radius: number) {
+    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: iColor, radius: number) {
         super(ctx, position, color);
         this.radius = radius;
     }

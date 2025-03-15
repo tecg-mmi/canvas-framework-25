@@ -1,7 +1,6 @@
-import {iPosition} from "../iPosition";
 import {Shape} from "./Shape";
-import {Rgba} from "../colors/Rgba";
-import {Hsl} from "../colors/Hsl";
+import {iColor} from "../../types/iColor";
+import {iPosition} from "../../types/iPosition";
 
 export class Rectangle extends Shape {
     width: number;
@@ -9,7 +8,7 @@ export class Rectangle extends Shape {
     rotation: number;
 
 
-    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: Rgba | Hsl, width: number, height: number, rotation: number) {
+    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color:iColor, width: number, height: number, rotation: number) {
         super(ctx, position, color);
         this.width = width;
         this.height = height;

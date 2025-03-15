@@ -1,6 +1,7 @@
 import {settings} from "../settings";
+import {iColor} from "../../types/iColor";
 
-export class Rgb {
+export class Rgb implements iColor {
     private _red: number;
     private _green: number;
     private _blue: number;
