@@ -14,7 +14,7 @@ export class Rgb implements iColor {
 
 
     set red(value: number) {
-        if (value >= 0 && value <= 250) {
+        if (value >= 0 && value <= 255) {
             this._red = value;
         } else {
             this._red = settings.defaultColorValue;
@@ -23,7 +23,7 @@ export class Rgb implements iColor {
     }
 
     set green(value: number) {
-        if (value >= 0 && value <= 250) {
+        if (value >= 0 && value <= 255) {
             this._green = value;
         } else {
             this._green = settings.defaultColorValue;
@@ -32,7 +32,7 @@ export class Rgb implements iColor {
     }
 
     set blue(value: number) {
-        if (value >= 0 && value <= 250) {
+        if (value >= 0 && value <= 255) {
             this._blue = value;
         } else {
             this._blue = settings.defaultColorValue;
