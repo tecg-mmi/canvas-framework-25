@@ -1,10 +1,9 @@
-import * as console from "node:console";
+import {settings} from "../settings";
 
 export class Hsl {
     private _hue: number;
     private _saturation: number;
     private _lightness: number;
-
 
     constructor(hue: number, saturation: number, lightness: number) {
         this.hue = hue;
@@ -12,15 +11,11 @@ export class Hsl {
         this.lightness = lightness;
     }
 
-    toString() {
-        return `hsl(${this._hue}deg,${this._saturation}%,${this.lightness}%)`
-    }
-
     set lightness(value: number) {
         if (value >= 0 && value <= 100) {
             this._lightness = value;
         } else {
-            this._lightness = 0;
+            this._lightness = settings.defaultColorValue;
         }
     }
 
@@ -36,9 +31,8 @@ export class Hsl {
     set hue(value: number) {
         if (value >= 0 && value <= 360) {
             this._hue = value;
-        }
-        else {
-            this._hue = 0;
+        } else {
+            this._hue = settings.defaultColorValue;
         }
     }
 
@@ -49,10 +43,13 @@ export class Hsl {
     set saturation(value: number) {
         if (value >= 0 && value <= 100) {
             this._saturation = value;
+        } else {
+            this._saturation = settings.defaultColorValue;
         }
-        else {
-            this._saturation = 0;
-        }
+    }
+
+    toString() {
+        return `hsl(${this.hue}deg,${this.saturation}%,${this.lightness}%)`
     }
 }
 

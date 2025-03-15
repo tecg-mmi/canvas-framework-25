@@ -8,10 +8,9 @@ export abstract class Shape {
     color: Rgba | Hsl;
 
 
-    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: Rgba | Hsl) {
+    protected constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: Rgba | Hsl) {
         this.ctx = ctx;
         this.position = position;
         this.color = color;
     }
-
 }
