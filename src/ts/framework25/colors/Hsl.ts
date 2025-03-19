@@ -52,5 +52,6 @@ export class Hsl implements iColor {
     toString() {
         return `hsl(${this.hue}deg,${this.saturation}%,${this.lightness}%)`
     }
+
 }
 

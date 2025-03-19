@@ -8,7 +8,7 @@ export class Rectangle extends Shape {
     rotation: number;
 
 
-    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: iColor, width: number, height: number, rotation: number) {
+    constructor(ctx: CanvasRenderingContext2D, position: iPosition, color: iColor, width: number, height: number, rotation: number = 0) {
         super(ctx, position, color);
         this.width = width;
         this.height = height;
