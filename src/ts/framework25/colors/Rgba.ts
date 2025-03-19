@@ -1,6 +1,7 @@
 import {Rgb} from "./Rgb";
+import {iColor} from "../types/iColor";
 
-export class Rgba extends Rgb {
+export class Rgba extends Rgb implements iColor {
     private _alpha: number;
 
     constructor(red: number, green: number, blue: number, alpha: number) {

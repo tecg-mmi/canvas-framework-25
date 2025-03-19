@@ -1,6 +1,7 @@
 import {settings} from "../settings";
+import {iColor} from "../types/iColor";
 
-export class Hsl {
+export class Hsl implements iColor {
     private _hue: number;
     private _saturation: number;
     private _lightness: number;
@@ -51,5 +52,6 @@ export class Hsl {
     toString() {
         return `hsl(${this.hue}deg,${this.saturation}%,${this.lightness}%)`
     }
+
 }
 
